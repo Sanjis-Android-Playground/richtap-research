@@ -18,6 +18,7 @@ were confirmed; a third playback-layer issue remains open.
 | [docs/COMMANDS.md](docs/COMMANDS.md) | Working Termux, build, flash, and test commands |
 | [docs/ARTIFACTS.md](docs/ARTIFACTS.md) | Local artifact hashes and provenance |
 | [docs/PROVENANCE.md](docs/PROVENANCE.md) | Upstream sources and licensing notes |
+| [patches/](patches/) | The applied `0x1000` effect-ID patch |
 
 ## Confirmed findings
 

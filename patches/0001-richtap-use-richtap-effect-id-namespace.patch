@@ -1,0 +1,15 @@
+diff --git a/vibrator/richtap/Vibrator.cpp b/vibrator/richtap/Vibrator.cpp
+index bfabfb0..ad62f0c 100644
+--- a/vibrator/richtap/Vibrator.cpp
++++ b/vibrator/richtap/Vibrator.cpp
+@@ -93,7 +93,9 @@ ndk::ScopedAStatus Vibrator::perform(Effect effect, EffectStrength es,
+             return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
+     }
+ 
+-    int32_t ret = aac_vibra_looper_prebaked_effect(static_cast<uint32_t>(effect), strength);
++    // libaacvibrator expects RichTap effect IDs, not raw AIDL Effect values.
++    int32_t ret = aac_vibra_looper_prebaked_effect(0x1000 + static_cast<uint32_t>(effect),
++                                                   strength);
+     if (ret < 0) {
+         ALOGE("AAC perform failed: %d\n", ret);
+         return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_SERVICE_SPECIFIC));

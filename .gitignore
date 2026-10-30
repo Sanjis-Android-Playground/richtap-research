@@ -1,0 +1,20 @@
+# Proprietary OOS/OPlus blobs and device firmware.
+# They stay on the build host; this repository records hashes and evidence only.
+*.so
+*.bin
+*.config
+cfg_xor_*.bin
+
+# Large/local build and runtime logs. Sanitized excerpts live in docs/.
+*.log
+*.tar.gz
+
+# Imported reference trees with their own Git metadata.
+hardware_oplus/
+oplus-driver/
+agents/
+
+# Local build products.
+out/
+*.img
+*.zip

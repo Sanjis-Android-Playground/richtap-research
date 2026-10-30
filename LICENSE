@@ -1,0 +1,14 @@
+Copyright (c) 2026 Sanjivns
+
+Documentation in this repository is licensed under the Creative Commons
+Attribution 4.0 International License (CC BY 4.0).
+
+You may share and adapt the documentation for any purpose, provided that you
+give appropriate credit and indicate if changes were made.
+
+No proprietary OPlus/OOS binaries, configuration files, or firmware are
+included in this repository. Hashes and references are provided for
+identification only.
+
+Source-code snippets quoted from Linux kernel or Android projects retain their
+original licenses (GPL-2.0 and Apache-2.0 respectively).
